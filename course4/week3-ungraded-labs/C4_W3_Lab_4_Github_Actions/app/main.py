@@ -15,7 +15,7 @@ with open("models/wine.pkl", "rb") as file:
 
 class Wine(BaseModel):
     batches: List[conlist(item_type=float, min_items=13, max_items=13)]
-
+#tetse
 
 @app.post("/predict")
 def predict(wine: Wine):
